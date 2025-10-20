@@ -1,74 +1,125 @@
-&lt;!-- Ilyas Ait Ichou – Single-Page Portfolio --&gt;
-&lt;!-- Save as index.md on GitHub Pages, or drop into Notion --&gt;
-
-# 👋 Hey, I'm Ilyas Ait Ichou
-**Bilingual Operations & Digital Strategy Manager** | Salesforce Certified  
-Remote-ready • GMT+1 • [iaitichou99@gmail.com](mailto:iaitichou99@gmail.com) • [+212 724-301999](https://wa.me/212724301999)
-
+---
+layout: default
 ---
 
-## 🎯 Quick snapshot
-- 3+ years driving **20 % YoY sales growth** by tightening ops & logistics workflows.  
-- Orchestrated **50+ international shipments / year** across EU & Africa (CMA-CGM, Maersk).  
-- Built a side hustle from **0 → 100 k Pinterest followers** and **300 k content views**.  
-- Native Arabic, fluent English & French—comfortable switching mid-sentence on a client call.
+<!-- --------- 1.  HEAD SECTION --------- -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
----
+<style>
+ :root{
+   --bg:#0f0f0f;
+   --card:#1a1a1a;
+   --primary:#00f5d4;
+   --secondary:#ff477e;
+   --text:#e4e4e4;
+   --sub:#9a9a9a;
+ }
+ *{box-sizing:border-box;margin:0;padding:0;font-family:'Inter',sans-serif;color:var(--text);}
+ body{background:var(--bg);}
+ section{width:90%;max-width:1000px;margin:auto;padding:4rem 0;}
+ h1{font-size:2.8rem;font-weight:700;}
+ h2{font-size:1.8rem;margin-bottom:1rem;}
+ p{line-height:1.6;color:var(--sub);}
+ a{color:var(--primary);text-decoration:none;}
+ .btn{background:var(--primary);color:#000;padding:.75rem 1.5rem;border-radius:30px;font-weight:600;display:inline-block;margin-top:1rem;transition:.3s;}
+ .btn:hover{filter:brightness(1.15);}
+ .grid{display:grid;gap:2rem;}
+ .card{background:var(--card);border-radius:12px;padding:2rem;box-shadow:0 8px 24px rgba(0,0,0,.4);}
+ @media(min-width:768px){.grid{grid-template-columns:1fr 1fr;}}
+ /* ---- hero gradient ---- */
+ .hero{background:linear-gradient(135deg,#020024 0%,#090979 35%,#00d4ff 100%);padding:6rem 0;text-align:center;}
+ .hero h1,.hero p{color:#fff;}
+ /* ---- 3D avatar ---- */
+ model-viewer{width:240px;height:240px;margin:auto;display:block;outline:none;}
+</style>
 
-## 🚀 What I can do for you
-| Operations & Logistics | Tech & Automation | Growth & Branding |
-|---|---|---|
-| End-to-end supply-chain (B/L, container booking, Incoterms) | Salesforce CRM administration, custom objects & reports | Digital ads (Google, FB, IG) with ROAS tracking |
-| Vendor negotiation & cost reduction | Google Workspace scripting, basic HTML/CSS/JS | Content strategy that hit 300 k views organically |
-| Remote team coordination across time-zones | Building lightweight websites that solve import/export pain-points | T-shirt e-com: designed, marketed & fulfilled globally |
+<!-- --------- 2.  HERO --------- -->
+<section class="hero">
+ <h1>Ilyas Ait Ichou</h1>
+ <p>Bilingual Ops & Digital Strategy Manager • Salesforce Certified</p>
+ <!-- 3-D head (CC0 model) -->
+ <model-viewer camera-controls auto-rotate src="https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Duck/glTF/Duck.gltf" shadow-intensity="1" exposure="1"></model-viewer>
+ <a class="btn" href="#contact">Let’s connect</a>
+</section>
 
----
+<!-- --------- 3.  ABOUT --------- -->
+<section id="about">
+ <h2>About Me</h2>
+ <div class="grid">
+   <div class="card">
+     <h3>🌍 Background</h3>
+     <p>Student of Maths & CS at Mohammed V University, driving 20 % YoY sales growth for EU-Africa trade by tightening supply-chain ops and Salesforce automation.</p>
+   </div>
+   <div class="card">
+     <h3>🎯 Mission</h3>
+     <p>Bridge technical CRM solutions with on-the-ground logistics to help African exporters scale online—remotely, bilingually, and sustainably.</p>
+   </div>
+ </div>
+</section>
 
-## 🏆 Impact so far
-1. **Sofi Products & Ramlia de Froid** – Boosted revenue **20 %** by mapping bottlenecks in cold-chain logistics and digitizing the quotation workflow in Salesforce.  
-2. **Ecstarty (founder)** – Grew art-discovery Pinterest account to **100 k followers**; sold out 3 limited-edition T-shirt drops, shipping to 18 countries.  
-3. **Freelance web gigs** – Delivered 5 bilingual websites for Casablanca exporters, cutting their lead-capture time from 48 h → 2 h with embedded WhatsApp & B/L upload forms.
+<!-- --------- 4.  METRICS --------- -->
+<section id="metrics">
+ <h2>Impact Snapshot</h2>
+ <div class="grid">
+   <div class="card"><lottie-player src="https://assets3.lottiefiles.com/packages/lf20_jcikwtux.json" background="transparent" speed="1" style="width: 80px; height: 80px;" loop autoplay></lottie-player><h3>20 %</h3><p>Sales growth after workflow redesign</p></div>
+   <div class="card"><lottie-player src="https://assets3.lottiefiles.com/packages/lf20_tsxbtrcu.json" background="transparent" speed="1" style="width: 80px; height: 80px;" loop autoplay></lottie-player><h3>50 +</h3><p>International shipments / year</p></div>
+   <div class="card"><lottie-player src="https://assets3.lottiefiles.com/packages/lf20_wd1udlcv.json" background="transparent" speed="1" style="width: 80px; height: 80px;" loop autoplay></lottie-player><h3>100 k</h3><p>Organic Pinterest followers</p></div>
+   <div class="card"><lottie-player src="https://assets3.lottiefiles.com/packages/lf20_u4yrau.json" background="transparent" speed="1" style="width: 80px; height: 80px;" loop autoplay></lottie-player><h3>300 k</h3><p>Content views on side project</p></div>
+ </div>
+</section>
 
----
+<!-- --------- 5.  SKILL RADAR --------- -->
+<section id="skills">
+ <h2>Core Competencies</h2>
+ <div class="grid">
+   <div class="card">
+     <canvas id="radar"></canvas>
+   </div>
+   <div class="card">
+     <canvas id="bars"></canvas>
+   </div>
+ </div>
+ <script>
+  const radarCtx=document.getElementById('radar').getContext('2d');
+  new Chart(radarCtx,{type:'radar',data:{labels:['Salesforce','Logistics','Digital Ads','Project Mgt','Negotiation'],datasets:[{label:'Proficiency',data:[95,90,85,88,82],backgroundColor:'rgba(0,245,212,.2)',borderColor:'#00f5d4',pointBackgroundColor:'#00f5d4'}]},options:{scales:{r:{ticks:{display:false},grid:{color:'#333'},pointLabels:{color:'#9a9a9a'}}}}});
+  const barCtx=document.getElementById('bars').getContext('2d');
+  new Chart(barCtx,{type:'bar',data:{labels:['Arabic','French','English'],datasets:[{label:'Language Level %',data:[100,100,98],backgroundColor:['#ff477e','#00f5d4','#ffe100'],borderRadius:5}]},options:{plugins:{legend:{display:false}},scales:{y:{beginAtZero:true,max:100,grid:{color:'#333'},ticks:{color:'#9a9a9a'}},x:{grid:{display:false},ticks:{color:'#9a9a9a'}}}}});
+ </script>
+</section>
 
-## 🎓 Credentials & learning
-- **Salesforce Certified Associate** – Aug 2024  
-- **ALX Foundation – Workplace Readiness** – May 2024  
-- **Salesforce Administrator Cert** – *sitting exam Q1 2025*  
-- **B.Sc. Mathematics & Computer Science** – Mohammed V University (ongoing, evening classes)
+<!-- --------- 6.  TOOLBOX --------- -->
+<section id="tools">
+ <h2>Toolbox</h2>
+ <div class="card">
+   <p><span style="display:inline-block;background:#00f5d420;color:var(--primary);padding:.25rem .6rem;border-radius:6px;margin:.2rem;">Salesforce</span>
+   <span style="display:inline-block;background:#00f5d420;color:var(--primary);padding:.25rem .6rem;border-radius:6px;margin:.2rem;">Google Workspace</span>
+   <span style="display:inline-block;background:#00f5d420;color:var(--primary);padding:.25rem .6rem;border-radius:6px;margin:.2rem;">CMA-CGM & Maersk</span>
+   <span style="display:inline-block;background:#00f5d420;color:var(--primary);padding:.25rem .6rem;border-radius:6px;margin:.2rem;">Meta Ads</span>
+   <span style="display:inline-block;background:#00f5d420;color:var(--primary);padding:.25rem .6rem;border-radius:6px;margin:.2rem;">HTML / CSS / JS</span>
+   <span style="display:inline-block;background:#00f5d420;color:var(--primary);padding:.25rem .6rem;border-radius:6px;margin:.2rem;">Bill-of-Lading</span>
+   <span style="display:inline-block;background:#00f5d420;color:var(--primary);padding:.25rem .6rem;border-radius:6px;margin:.2rem;">Trello</span>
+   <span style="display:inline-block;background:#00f5d420;color:var(--primary);padding:.25rem .6rem;border-radius:6px;margin:.2rem;">Notion</span></p>
+ </div>
+</section>
 
----
+<!-- --------- 7.  CONTACT --------- -->
+<section id="contact">
+ <h2>Let’s Build Together</h2>
+ <div class="card" style="text-align:center;">
+   <p>Remote-ready • GMT+1<br>
+   <a href="mailto:iaitichou99@gmail.com">iaitichou99@gmail.com</a> •
+   <a href="https://wa.me/212724301999">WhatsApp</a> •
+   <a href="https://linkedin.com/in/ilyas-ait-ichou">LinkedIn</a> •
+   <a href="https://github.com/ilyasaitichou">GitHub</a>
+   </p>
+   <a class="btn" href="mailto:iaitichou99@gmail.com?subject=Collaboration">Start a conversation</a>
+ </div>
+</section>
 
-## 🛠️ Toolbox
-Salesforce | Google Ads | Meta Business Suite | CMA-CGM & Maersk portals | Bill-of-Lading management | Google Workspace | HTML/CSS/JS | Canva & Figma | Trello | Notion | Git & GitHub Pages (this site!)
-
----
-
-## 📂 Projects you can click into
-| Project | Stack | Live URL | Repo |
-|---|---|---|---|
-| Ecstarty Pinterest growth | Organic social, Tailwind | [pinterest.com/ecstarty](https://pinterest.com/ecstarty) | – |
-| Exporter landing page | HTML, CSS, Netlify | [mafrica-logistics.netlify.app](https://mafrica-logistics.netlify.app) | [GitHub](https://github.com/ilyasaitichou/logistics-site) |
-| Salesforce CRM for SME | Salesforce, Excel → Data Loader | Internal case study (PDF on request) | – |
-
----
-
-## 🗣️ What colleagues say
-&gt; “Ilyas turned our shipping chaos into a Trello board that actually works. Containers now leave Casablanca on the date promised—our EU clients noticed.”  
-&gt; — *Y. Ramli, CEO Sofi Products*
-
----
-
-## 📞 Let’s build something together
-I’m currently open to **remote roles** or **project-based contracts** in:  
-Operations management • Salesforce administration • Digital supply-chain consulting • Growth marketing for African exporters.
-
-[📧 Email me](mailto:iaitichou99@gmail.com) • [💬 WhatsApp](https://wa.me/212724301999) • [🔗 LinkedIn](https://linkedin.com/in/ilyas-ait-ichou) • [🐙 GitHub](https://github.com/ilyasaitichou)
-
----
-
-### 🌍 Fun fact
-I volunteer each summer teaching English to kids in rural Morocco—because soft skills change lives faster than code.
-
----
-Made with ❤️ in Markdown, deployed in 30 seconds on GitHub Pages.
+<!-- --------- 8.  FOOTER --------- -->
+<footer style="text-align:center;padding:2rem 0;font-size:.8rem;color:var(--sub);">
+ Made with ❤️ by Ilyas • 2025
+</footer>
