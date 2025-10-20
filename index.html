@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Ilyas Ait Ichou – Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <style>
+    :root{
+      --bg:#0f0f0f;
+      --card:#1a1a1a;
+      --primary:#00f5d4;
+      --secondary:#ff477e;
+      --text:#e4e4e4;
+      --sub:#9a9a9a;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;font-family:'Inter',sans-serif;color:var(--text);}
+    body{background:var(--bg);}
+    section{width:90%;max-width:1000px;margin:auto;padding:4rem 0;}
+    h1{font-size:2.8rem;font-weight:700;}
+    h2{font-size:1.8rem;margin-bottom:1rem;}
+    p{line-height:1.6;color:var(--sub);}
+    a{color:var(--primary);text-decoration:none;}
+    .btn{background:var(--primary);color:#000;padding:.75rem 1.5rem;border-radius:30px;font-weight:600;display:inline-block;margin-top:1rem;transition:.3s;}
+    .btn:hover{filter:brightness(1.15);}
+    .grid{display:grid;gap:2rem;}
+    .card{background:var(--card);border-radius:12px;padding:2rem;box-shadow:0 8px 24px rgba(0,0,0,.4);}
+    @media(min-width:768px){.grid{grid-template-columns:1fr 1fr;}}
+    .hero{background:linear-gradient(135deg,#020024 0%,#090979 35%,#00d4ff 100%);padding:6rem 0;text-align:center;}
+    .hero h1,.hero p{color:#fff;}
+    model-viewer{width:240px;height:240px;margin:auto;display:block;outline:none;}
+  </style>
+</head>
+<body>
+
+<!-- --------- HERO --------- -->
+<section class="hero">
+  <h1>Ilyas Ait Ichou</h1>
+  <p>Bilingual Ops & Digital Strategy Manager • Salesforce Certified</p>
+  <model-viewer camera-controls auto-rotate src="https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Duck/glTF/Duck.gltf" shadow-intensity="1"></model-viewer>
+  <a class="btn" href="#contact">Let’s connect</a>
+</section>
+
+<!-- --------- ABOUT --------- -->
+<section id="about">
+  <h2>About Me</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>🌍 Background</h3>
+      <p>Student of Maths & CS at Mohammed V University, driving 20 % YoY sales growth for EU-Africa trade by tightening supply-chain ops and Salesforce automation.</p>
+    </div>
+    <div class="card">
+      <h3>🎯 Mission</h3>
+      <p>Bridge technical CRM solutions with on-the-ground logistics to help African exporters scale online—remotely, bilingually, and sustainably.</p>
+    </div>
+  </div>
+</section>
+
+<!-- --------- METRICS --------- -->
+<section id="metrics">
+  <h2>Impact Snapshot</h2>
+  <div class="grid">
+    <div class="card"><lottie-player src="https://assets3.lottiefiles.com/packages/lf20_jcikwtux.json" background="transparent" speed="1" style="width:80px;height:80px;" loop autoplay></lottie-player><h3>20 %</h3><p>Sales growth after workflow redesign</p></div>
+    <div class="card"><lottie-player src="https://assets3.lottiefiles.com/packages/lf20_tsxbtrcu.json" background="transparent" speed="1" style="width:80px;height:80px;" loop autoplay></lottie-player><h3>50 +</h3><p>International shipments / year</p></div>
+    <div class="card"><lottie-player src="https://assets3.lottiefiles.com/packages/lf20_wd1udlcv.json" background="transparent" speed="1" style="width:80px;height:80px;" loop autoplay></lottie-player><h3>100 k</h3><p>Organic Pinterest followers</p></div>
+    <div class="card"><lottie-player src="https://assets3.lottiefiles.com/packages/lf20_u4yrau.json" background="transparent" speed="1" style="width:80px;height:80px;" loop autoplay></lottie-player><h3>300 k</h3><p>Content views on side project</p></div>
+  </div>
+</section>
+
+<!-- --------- SKILL RADAR --------- -->
+<section id="skills">
+  <h2>Core Competencies</h2>
+  <div class="grid">
+    <div class="card"><canvas id="radar"></canvas></div>
+    <div class="card"><canvas id="bars"></canvas></div>
+  </div>
+  <script>
+   const radarCtx=document.getElementById('radar').getContext('2d');
+   new Chart(radarCtx,{type:'radar',data:{labels:['Salesforce','Logistics','Digital Ads','Project Mgt','Negotiation'],datasets:[{label:'Proficiency',data:[95,90,85,88,82],backgroundColor:'rgba(0,245,212,.2)',borderColor:'#00f5d4',pointBackgroundColor:'#00f5d4'}]},options:{scales:{r:{ticks:{display:false},grid:{color:'#333'},pointLabels:{color:'#9a9a9a'}}}}});
+   const barCtx=document.getElementById('bars').getContext('2d');
+   new Chart(barCtx,{type:'bar',data:{labels:['Arabic','French','English'],datasets:[{label:'Language Level %',data:[100,100,98],backgroundColor:['#ff477e','#00f5d4','#ffe100'],borderRadius:5}]},options:{plugins:{legend:{display:false}},scales:{y:{beginAtZero:true,max:100,grid:{color:'#333'},ticks:{color:'#9a9a9a'}},x:{grid:{display:false},ticks:{color:'#9a9a9a'}}}}});
+  </script>
+</section>
+
+<!-- --------- TOOLBOX --------- -->
+<section id="tools">
+  <h2>Toolbox</h2>
+  <div class="card">
+    <p><span style="display:inline-block;background:#00f5d420;color:var(--primary);padding:.25rem .6rem;border-radius:6px;margin:.2rem;">Salesforce</span>
+    <span style="display:inline-block;background:#00f5d420;color:var(--primary);padding:.25rem .6rem;border-radius:6px;margin:.2rem;">Google Workspace</span>
+    <span style="display:inline-block;background:#00f5d420;color:var(--primary);padding:.25rem .6rem;border-radius:6px;margin:.2rem;">CMA-CGM & Maersk</span>
+    <span style="display:inline-block;background:#00f5d420;color:var(--primary);padding:.25rem .6rem;border-radius:6px;margin:.2rem;">Meta Ads</span>
+    <span style="display:inline-block;background:#00f5d420;color:var(--primary);padding:.25rem .6rem;border-radius:6px;margin:.2rem;">HTML / CSS / JS</span>
+    <span style="display:inline-block;background:#00f5d420;color:var(--primary);padding:.25rem .6rem;border-radius:6px;margin:.2rem;">Bill-of-Lading</span>
+    <span style="display:inline-block;background:#00f5d420;color:var(--primary);padding:.25rem .6rem;border-radius:6px;margin:.2rem;">Trello</span>
+    <span style="display:inline-block;background:#00f5d420;color:var(--primary);padding:.25rem .6rem;border-radius:6px;margin:.2rem;">Notion</span></p>
+  </div>
+</section>
+
+<!-- --------- CONTACT --------- -->
+<section id="contact">
+  <h2>Let’s Build Together</h2>
+  <div class="card" style="text-align:center;">
+    <p>Remote-ready • GMT+1<br>
+    <a href="mailto:iaitichou99@gmail.com">iaitichou99@gmail.com</a> •
+    <a href="https://wa.me/212724301999">WhatsApp</a> •
+    <a href="https://linkedin.com/in/ilyas-ait-ichou">LinkedIn</a> •
+    <a href="https://github.com/ilyasaitichou">GitHub</a>
+    </p>
+    <a class="btn" href="mailto:iaitichou99@gmail.com?subject=Collaboration">Start a conversation</a>
+  </div>
+</section>
+
+<footer style="text-align:center;padding:2rem 0;font-size:.8rem;color:#9a9a9a;">
+  Made with ❤️ by Ilyas • 2025
+</footer>
+</body>
+</html>
